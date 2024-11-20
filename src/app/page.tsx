@@ -21,7 +21,7 @@ export default function Home() {
           </svg>
           <button onMouseEnter={() => setTransition((e) => !e)} onMouseLeave={() => setTransition(false)} className="mt-4 flex flex-row gap-2 items-center justify-center mx-auto w-[230px] py-2 text-[#ff13f0] text-lg font-semibold bg-pink-50 rounded-full transition ease-in-out delay-150 hover:bg-pink-100">Create new swap<span className={`${transition ? "text-[#ff13f0] transition ease-in-out delay-150 translate-x-[5px]" : "text-[#ff13f0] transition ease-in-out delay-150"}`}>→</span></button>
         </div>
-        <div className="mt-10 overflow-scroll justify-center w-full h-[300px] mx-auto rounded-xl bg-pink-50 shadow-inner border-[1px] border-pink-100 p-4 px-10 space-y-2" onMouseEnter={() => setPing(false)}>
+        <div className="mt-10 overflow-scroll justify-center w-full h-[330px] mx-auto rounded-xl bg-pink-50 shadow-inner border-[1px] border-pink-100 p-4 px-10 space-y-2" onMouseEnter={() => setPing(false)}>
           <div className={`${ping ? "opacity-100 animate-bounce flex absolute mt-[275px] ml-[37%] md:ml-[290px] mx-auto justify-center items-center w-8 h-7 text-black text-xs rounded-full border-[1px] border-zinc-300 bg-zinc-100 font-semibold transition delay-150 ease-in-out" : "opacity-0 animate-bounce flex absolute mt-[275px] ml-[37%] md:ml-[290px] mx-auto justify-center items-center w-8 h-7 text-xs text-black rounded-full border-[1px] border-zinc-300 bg-zinc-100 font-semibold transition delay-150 ease-in-out"}`}>↓</div>
           <div className="text-2xl text-zinc-700 font-semibold">Recent news:</div>
           <div className="bg-white h-20 flex flex-row gap-4 justify- w-full rounded-xl py-2 px-6 items-center">
